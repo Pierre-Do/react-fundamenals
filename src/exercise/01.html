@@ -14,3 +14,19 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+<html lang="en">
+  <body></body>
+  <script type="module">
+    ;(function () {
+      const content = document.createElement('div')
+      content.className = 'container'
+      content.textContent = 'Hello World'
+
+      const root = document.createElement('div')
+      root.setAttribute('id', 'root')
+      root.appendChild(content)
+
+      document.body.appendChild(root)
+    })()
+  </script>
+</html>
